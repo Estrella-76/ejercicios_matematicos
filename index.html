@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\estilo.css">
+    <title>document</title>
+</head>
+<body>
+    <header>
+        <h1>Evaluador de Expresiones Matemáticas</h1>
+    </header>
+    <nav>
+        <button onclick="showSection('ejercicio6')">Ejercicio 6</button>
+        <button onclick="showSection('ejercicio7')">Ejercicio 7</button>
+        <button onclick="showSection('ejercicio8')">Ejercicio 8</button>
+        <button onclick="showSection('ejercicio9')">Ejercicio 9</button>
+        <button onclick="showSection('ejercicio10')">Ejercicio 10</button>
+    </nav>
+    <section id="ejercicio6" class="active">
+        <h2>Ejercicio 6</h2>
+        <div>
+            <h3>(a) 0.4z^4 + 3.1z^2 - 162.3z - 80.7</h3>
+            <button onclick="evaluarEjercicio6a()">Evaluar</button>
+            <div id="resultado6a"></div>
+        </div>
+        <div>
+            <h3>(b) frac{(z^3 - 23)}{\sqrt[3]{z^2 + 17.5}}</h3>
+            <button onclick="evaluarEjercicio6b()">Evaluar</button>
+            <div id="resultado6b"></div>
+        </div>
+    </section>
+
+    <section id="ejercicio7">
+        <h2>Ejercicio 7</h2>
+        <div>
+            <h3>(a) \frac{1}{2}e^{2t} - 3.8t^3</h3>
+            <button onclick="evaluarEjercicio7a()">Evaluar</button>
+            <div id="resultado7a"></div>
+        </div>
+        <div>
+            <h3>(b) \frac{6t^2 + 6t - 2}{t^2 - 1}</h3>
+            <button onclick="evaluarEjercicio7b()">Evaluar</button>
+            <div id="resultado7b"></div>
+        </div>
+    </section>
+
+    <section id="ejercicio8">
+        <h2>Ejercicio 8</h2>
+        <div>
+            <h3>(a) (x^2 + y^2)^{2/3} + \frac{xy}{y-x}</h3>
+            <button onclick="evaluarEjercicio8a()">Evaluar</button>
+            <div id="resultado8a"></div>
+        </div>
+        <div>
+            <h3>(b) \frac{\sqrt{x+y}}{(x-y)^2} + 2x^2 - xy^2</h3>
+            <button onclick="evaluarEjercicio8b()">Evaluar</button>
+            <div id="resultado8b"></div>
+        </div>
+    </section>
+
+    <section id="ejercicio9">
+        <h2>Ejercicio 9</h2>
+        <div>
+            <h3>(a) e^{d-b} + \sqrt[3]{c+a} - (ca)^d</h3>
+            <button onclick="evaluarEjercicio9a()">Evaluar</button>
+            <div id="resultado9a"></div>
+        </div>
+        <div>
+            <h3>(b) \frac{d}{c} + (\frac{ct}{b})^2 - c^d - \frac{a}{b}</h3>
+            <button onclick="evaluarEjercicio9b()">Evaluar</button>
+            <div id="resultado9b"></div>
+        </div>
+    </section>
+
+    <section id="ejercicio10">
+        <h2>Ejercicio 10</h2>
+        <div>
+            <h3>(a) \cos^2 x - \sin^2 x = 1 - 2\sin^2 x</h3>
+            <p>Verificar para $x = \pi / 10$</p>
+            <button onclick="verificarEjercicio10a()">Verificar</button>
+            <p class="result" id="resultado10a"></p>
+        </div>
+        <div>
+            <h3>(b) \frac{\tan x}{\sin x - 2 \tan x} = \frac{1}{\cos x - 2}</h3>
+            <p>Verificar para $x = \pi / 10$</p>
+            <button onclick="verificarEjercicio10b()">Verificar</button>
+            <p class="result" id="resultado10b"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 derechos reservados</p>
+    </footer>
+<script src="js\js.js"></script>
+</body>
+</html>
